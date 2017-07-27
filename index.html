@@ -8,16 +8,15 @@
     <script src="js/script.js"></script>
 </head>
 <body>
+  <h1>Price Calculator.</h1>
   <div class="form">
-    <div class="row">
+    <div class="col">
       <div class="box">
         <input type="number" placeholder="Number of print colors..." min="1"  id="paintColors"></input>
       </div>
       <div class="box">
         <input type="number" placeholder="Number of paint colors..." min="1" id="printColors"></input>
       </div>
-    </div>
-    <div class ="row">
       <div class="box">
         <input type="number" placeholder="Enter you synth width (mm)..." min="1" id="width"></input>
       </div>
@@ -25,14 +24,22 @@
         <input type="number" placeholder="Enter you synth height (mm)..." min="1" id="height"></input>
       </div>
     </div>
-    <div class ="row">
+    <div class ="col">
+      <div class="box price">
+        <div class="line">
+
+        </div>
+        <div id="price">
+
+        </div><br>
+        <p id="currency">EUR</p>
+      </div>
+      <div class="box" id="info">
+
+      </div>
       <div class="box">
         <input type="button" value="Calculate price..." id="button"></input>
       </div>
-      <div class="box">
-        <input type="text" placeholder="Fill the form and check the price!" id="price"></input>
-      </div>
     </div>
-  </div>
 </body>
 </html>
